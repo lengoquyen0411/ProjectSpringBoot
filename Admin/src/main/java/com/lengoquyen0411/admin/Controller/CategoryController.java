@@ -1,7 +1,7 @@
 package com.lengoquyen0411.admin.Controller;
 
-import com.lengoquyen0411.admin.Model.Category;
-import com.lengoquyen0411.admin.Service.CategoryService;
+import com.lengoquyen0411.library.Model.Category;
+import com.lengoquyen0411.library.Service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;

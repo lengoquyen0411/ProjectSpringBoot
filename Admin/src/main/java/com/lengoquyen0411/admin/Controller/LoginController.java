@@ -1,8 +1,8 @@
 package com.lengoquyen0411.admin.Controller;
 
-import com.lengoquyen0411.admin.DTO.AdminDTO;
-import com.lengoquyen0411.admin.Model.Admin;
-import com.lengoquyen0411.admin.Service.impl.AdminServiceImpl;
+import com.lengoquyen0411.library.DTO.AdminDTO;
+import com.lengoquyen0411.library.Model.Admin;
+import com.lengoquyen0411.library.Service.impl.AdminServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

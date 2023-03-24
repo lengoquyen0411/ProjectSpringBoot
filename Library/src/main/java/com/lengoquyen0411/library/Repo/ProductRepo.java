@@ -1,6 +1,6 @@
-package com.lengoquyen0411.admin.Repo;
+package com.lengoquyen0411.library.Repo;
 
-import com.lengoquyen0411.admin.Model.Product;
+import com.lengoquyen0411.library.Model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

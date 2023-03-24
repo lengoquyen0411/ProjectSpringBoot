@@ -1,7 +1,7 @@
-package com.lengoquyen0411.admin.Service;
+package com.lengoquyen0411.library.Service;
 
-import com.lengoquyen0411.admin.DTO.ProductDTO;
-import com.lengoquyen0411.admin.Model.Product;
+import com.lengoquyen0411.library.DTO.ProductDTO;
+import com.lengoquyen0411.library.Model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.web.multipart.MultipartFile;
 

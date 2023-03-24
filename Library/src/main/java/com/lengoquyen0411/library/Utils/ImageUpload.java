@@ -1,4 +1,4 @@
-package com.lengoquyen0411.admin.Utils;
+package com.lengoquyen0411.library.Utils;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;

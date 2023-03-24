@@ -1,4 +1,4 @@
-package com.lengoquyen0411.admin.Model;
+package com.lengoquyen0411.library.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

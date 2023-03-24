@@ -1,8 +1,8 @@
-package com.lengoquyen0411.admin.Service.impl;
+package com.lengoquyen0411.library.Service.impl;
 
-import com.lengoquyen0411.admin.Model.Category;
-import com.lengoquyen0411.admin.Repo.CategoryRepo;
-import com.lengoquyen0411.admin.Service.CategoryService;
+import com.lengoquyen0411.library.Model.Category;
+import com.lengoquyen0411.library.Repo.CategoryRepo;
+import com.lengoquyen0411.library.Service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

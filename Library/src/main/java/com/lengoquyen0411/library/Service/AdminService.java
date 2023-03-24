@@ -1,7 +1,7 @@
-package com.lengoquyen0411.admin.Service;
+package com.lengoquyen0411.library.Service;
 
-import com.lengoquyen0411.admin.DTO.AdminDTO;
-import com.lengoquyen0411.admin.Model.Admin;
+import com.lengoquyen0411.library.DTO.AdminDTO;
+import com.lengoquyen0411.library.Model.Admin;
 
 public interface AdminService {
     Admin findByUsername(String username);

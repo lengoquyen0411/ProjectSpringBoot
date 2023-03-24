@@ -1,6 +1,6 @@
-package com.lengoquyen0411.admin.Repo;
+package com.lengoquyen0411.library.Repo;
 
-import com.lengoquyen0411.admin.Model.Role;
+import com.lengoquyen0411.library.Model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

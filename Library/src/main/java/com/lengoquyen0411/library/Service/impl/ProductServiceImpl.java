@@ -1,10 +1,10 @@
-package com.lengoquyen0411.admin.Service.impl;
+package com.lengoquyen0411.library.Service.impl;
 
-import com.lengoquyen0411.admin.DTO.ProductDTO;
-import com.lengoquyen0411.admin.Model.Product;
-import com.lengoquyen0411.admin.Repo.ProductRepo;
-import com.lengoquyen0411.admin.Service.ProductService;
-import com.lengoquyen0411.admin.Utils.ImageUpload;
+import com.lengoquyen0411.library.DTO.ProductDTO;
+import com.lengoquyen0411.library.Model.Product;
+import com.lengoquyen0411.library.Repo.ProductRepo;
+import com.lengoquyen0411.library.Service.ProductService;
+import com.lengoquyen0411.library.Utils.ImageUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

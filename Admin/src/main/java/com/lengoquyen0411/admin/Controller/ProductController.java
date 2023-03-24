@@ -1,10 +1,10 @@
 package com.lengoquyen0411.admin.Controller;
 
 
-import com.lengoquyen0411.admin.DTO.ProductDTO;
-import com.lengoquyen0411.admin.Model.Category;
-import com.lengoquyen0411.admin.Service.CategoryService;
-import com.lengoquyen0411.admin.Service.ProductService;
+import com.lengoquyen0411.library.DTO.ProductDTO;
+import com.lengoquyen0411.library.Model.Category;
+import com.lengoquyen0411.library.Service.CategoryService;
+import com.lengoquyen0411.library.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;

@@ -1,6 +1,6 @@
-package com.lengoquyen0411.admin.DTO;
+package com.lengoquyen0411.library.DTO;
 
-import com.lengoquyen0411.admin.Model.Category;
+import com.lengoquyen0411.library.Model.Category;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

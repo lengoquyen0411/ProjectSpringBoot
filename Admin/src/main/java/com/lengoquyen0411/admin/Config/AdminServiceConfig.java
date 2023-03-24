@@ -1,7 +1,7 @@
 package com.lengoquyen0411.admin.Config;
 
-import com.lengoquyen0411.admin.Model.Admin;
-import com.lengoquyen0411.admin.Repo.AdminRepo;
+import com.lengoquyen0411.library.Model.Admin;
+import com.lengoquyen0411.library.Repo.AdminRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;

@@ -1,10 +1,10 @@
-package com.lengoquyen0411.admin.Service.impl;
+package com.lengoquyen0411.library.Service.impl;
 
-import com.lengoquyen0411.admin.DTO.AdminDTO;
-import com.lengoquyen0411.admin.Model.Admin;
-import com.lengoquyen0411.admin.Repo.AdminRepo;
-import com.lengoquyen0411.admin.Repo.RoleRepo;
-import com.lengoquyen0411.admin.Service.AdminService;
+import com.lengoquyen0411.library.DTO.AdminDTO;
+import com.lengoquyen0411.library.Model.Admin;
+import com.lengoquyen0411.library.Repo.AdminRepo;
+import com.lengoquyen0411.library.Repo.RoleRepo;
+import com.lengoquyen0411.library.Service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

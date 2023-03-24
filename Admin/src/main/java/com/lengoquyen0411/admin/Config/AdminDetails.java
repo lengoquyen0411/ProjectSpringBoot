@@ -1,7 +1,7 @@
 package com.lengoquyen0411.admin.Config;
 
-import com.lengoquyen0411.admin.Model.Admin;
-import com.lengoquyen0411.admin.Model.Role;
+import com.lengoquyen0411.library.Model.Admin;
+import com.lengoquyen0411.library.Model.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
