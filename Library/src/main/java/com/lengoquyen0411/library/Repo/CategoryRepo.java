@@ -1,5 +1,6 @@
 package com.lengoquyen0411.library.Repo;
 
+import com.lengoquyen0411.library.DTO.CategoryDTO;
 import com.lengoquyen0411.library.Model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -13,8 +14,8 @@ public interface CategoryRepo extends JpaRepository<Category, Long> {
     List<Category> findAllByActivated();
 
 
-//    /*Customer*/
-//    @Query("select new com.ecommerce.library.dto.CategoryDto(c.id, c.name, count(p.category.id)) from Category c inner join Product p on p.category.id = c.id " +
-//            " where c.is_activated = true and c.is_deleted = false group by c.id")
-//    List<CategoryDto> getCategoryAndProduct();
+    /*Customer*/
+    @Query("select new com.lengoquyen0411.library.DTO.CategoryDTO(c.id, c.name, count(p.category.id)) from Category c inner join Product p on p.category.id = c.id " +
+            " where c.is_activated = true and c.is_deleted = false group by c.id")
+    List<CategoryDTO> getCategoryAndProduct();
 }

@@ -1,5 +1,6 @@
 package com.lengoquyen0411.library.Service.impl;
 
+import com.lengoquyen0411.library.DTO.CategoryDTO;
 import com.lengoquyen0411.library.Model.Category;
 import com.lengoquyen0411.library.Repo.CategoryRepo;
 import com.lengoquyen0411.library.Service.CategoryService;
@@ -64,8 +65,8 @@ public class CategoryServiceImpl implements CategoryService {
         return repo.findAllByActivated();
     }
 
-//    @Override
-//    public List<CategoryDto> getCategoryAndProduct() {
-//        return repo.getCategoryAndProduct();
-//    }
+    @Override
+    public List<CategoryDTO> getCategoryAndProduct() {
+        return repo.getCategoryAndProduct();
+    }
 }

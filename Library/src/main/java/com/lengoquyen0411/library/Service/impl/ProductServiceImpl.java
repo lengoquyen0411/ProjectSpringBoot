@@ -24,6 +24,7 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ImageUpload imageUpload;
 
+    /*Admin*/
     @Override
     public List<ProductDTO> findAll() {
         List<Product> products = productRepo.findAll();
@@ -117,7 +118,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<ProductDTO> pageProducts(int pageNo) {
-        Pageable pageable = PageRequest.of(pageNo, 5);
+        Pageable pageable = PageRequest.of(pageNo, 6);
         List<ProductDTO> products = transfer(productRepo.findAll());
         Page<ProductDTO> productPages = toPage(products, pageable);
         return productPages;
@@ -125,14 +126,14 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<ProductDTO> searchProducts(int pageNo, String keyword) {
-        Pageable pageable = PageRequest.of(pageNo, 5);
+        Pageable pageable = PageRequest.of(pageNo, 6);
         List<ProductDTO> productDtoList = transfer(productRepo.searchProductsList(keyword));
         Page<ProductDTO> products = toPage(productDtoList, pageable);
         return products;
     }
 
-    private Page toPage(List<ProductDTO> list , Pageable pageable){
-        if(pageable.getOffset() >= list.size()){
+    private Page toPage(List<ProductDTO> list, Pageable pageable) {
+        if (pageable.getOffset() >= list.size()) {
             return Page.empty();
         }
         int startIndex = (int) pageable.getOffset();
@@ -144,9 +145,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
 
-    private List<ProductDTO> transfer(List<Product> products){
+    private List<ProductDTO> transfer(List<Product> products) {
         List<ProductDTO> productDTOList = new ArrayList<>();
-        for(Product product : products){
+        for (Product product : products) {
             ProductDTO productDTO = new ProductDTO();
             productDTO.setId(product.getId());
             productDTO.setName(product.getName());
@@ -163,31 +164,32 @@ public class ProductServiceImpl implements ProductService {
         return productDTOList;
     }
 
-//    @Override
-//    public List<Product> getAllProducts() {
-//        return null;
-//    }
-//
-//    @Override
-//    public List<Product> listViewProducts() {
-//        return null;
-//    }
-//
-//    @Override
-//    public Product getProductById(Long id) {
-//        return null;
-//    }
-//
-//    @Override
-//    public List<Product> getRelatedProducts(Long categoryId) {
-//        return null;
-//    }
-//
-//    @Override
-//    public List<Product> getProductsInCategory(Long categoryId) {
-//        return null;
-//    }
-//
+    /*Customer*/
+    @Override
+    public List<Product> getAllProducts() {
+        return productRepo.getAllProducts();
+    }
+
+    @Override
+    public List<Product> listViewProducts() {
+        return productRepo.listViewProducts();
+    }
+
+    @Override
+    public Product getProductById(Long id) {
+        return productRepo.getById(id);
+    }
+
+    @Override
+    public List<Product> getRelatedProducts(Long categoryId) {
+        return productRepo.getRelatedProducts(categoryId);
+    }
+
+    @Override
+    public List<Product> getProductsInCategory(Long categoryId) {
+        return productRepo.getProductsInCategory(categoryId);
+    }
+
 //    @Override
 //    public List<Product> filterHighPrice() {
 //        return null;

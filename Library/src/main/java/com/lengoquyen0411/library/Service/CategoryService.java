@@ -1,5 +1,6 @@
 package com.lengoquyen0411.library.Service;
 
+import com.lengoquyen0411.library.DTO.CategoryDTO;
 import com.lengoquyen0411.library.Model.Category;
 
 import java.util.List;
@@ -14,9 +15,7 @@ public interface CategoryService {
     void enabledById(Long id);
     List<Category> findAllByActivated();
 
-//    /*Customer*/
-//    List<CategoryDto> getCategoryAndProduct();
-
-
+    /*Customer*/
+    List<CategoryDTO> getCategoryAndProduct();
 }
 
