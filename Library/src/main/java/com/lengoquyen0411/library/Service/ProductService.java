@@ -32,7 +32,7 @@ public interface ProductService {
 
     List<Product> getProductsInCategory(Long categoryId);
 
-//    List<Product> filterHighPrice();
-//
-//    List<Product> filterLowPrice();
+    List<Product> filterHighPrice();
+
+    List<Product> filterLowPrice();
 }

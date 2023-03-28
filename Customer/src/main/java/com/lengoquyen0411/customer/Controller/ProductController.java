@@ -48,4 +48,26 @@ public class ProductController {
         model.addAttribute("products", products);
         return "products-in-category";
     }
+
+    @GetMapping("/high-price")
+    public String filterHighPrice(Model model){
+        List<Category> categories = categoryService.findAllByActivated();
+        List<CategoryDTO> categoryDTOList = categoryService.getCategoryAndProduct();
+        List<Product> products = productService.filterHighPrice();
+        model.addAttribute("categoryDTOList", categoryDTOList);
+        model.addAttribute("products", products);
+        model.addAttribute("categories", categories);
+        return "filter-high-price";
+    }
+
+    @GetMapping("/low-price")
+    public String filterLowPrice(Model model){
+        List<Category> categories = categoryService.findAllByActivated();
+        List<CategoryDTO> categoryDTOList = categoryService.getCategoryAndProduct();
+        List<Product> products = productService.filterLowPrice();
+        model.addAttribute("categoryDTOList", categoryDTOList);
+        model.addAttribute("products", products);
+        model.addAttribute("categories", categories);
+        return "filter-low-price";
+    }
 }
